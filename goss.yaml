@@ -1,0 +1,28 @@
+http:
+  http://127.0.0.1:8080/:
+    status: 200
+    body: [hello world]
+  http://127.0.0.1:8080/?uppercase:
+    status: 200
+    body: [HELLO WORLD]
+  http://127.0.0.1:8080/?reversed:
+    status: 200
+    body: [dlrow olleh]
+  http://127.0.0.1:8080/hello:
+    status: 200
+    body: [hello]
+  http://127.0.0.1:8080/hello?uppercase:
+    status: 200
+    body: [HELLO]
+  http://127.0.0.1:8080/hello?reversed:
+    status: 200
+    body: [olleh]
+  http://127.0.0.1:8080/world:
+    status: 200
+    body: [world]
+  http://127.0.0.1:8080/world?uppercase:
+    status: 200
+    body: [WORLD]
+  http://127.0.0.1:8080/world?reversed:
+    status: 200
+    body: [dlrow]
