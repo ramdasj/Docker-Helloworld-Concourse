@@ -40,6 +40,7 @@ $ ls
 Dockerfile goss.yaml Readme.txt simplehttpserver.py
 
 // Run all test define in goss.yaml
+```
 $ goss validate
 /hello
 127.0.0.1 - - [29/Apr/2018 18:16:20] "GET /hello HTTP/1.1" 200 -
@@ -64,7 +65,7 @@ $ goss validate
 Total Duration: 0.017s
 Count: 20, Failed: 0, Skipped: 0
 
-
+```
 
 
 Part3: CI integration
