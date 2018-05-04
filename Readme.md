@@ -11,7 +11,7 @@ chmod +rx /usr/local/bin/dgoss
 Part1: 
 - Develop simplehttpserver
 - Build and start simplehttpserver container
-
+```
 $ pwd
 /simplehttpserver
 $ ls
@@ -27,7 +27,7 @@ $ docker container ls
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
 9870a7b2ed3e        simplehttpserver    "python simplehttpse…"   About an hour ago   Up About an hour    0.0.0.0:8080->8080/tcp   practical_kepler
 
-
+```
 
 
 
@@ -75,9 +75,10 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-c
 // Download fly - copy to /usr/local/bin/.
 https://concourse-ci.org/download.html
 
-
+```
 $ docker-compose up -d
 $ fly --target testserver login --concourse-url http://127.0.0.1:8081
 $ fly --target testserver execute -c httpserver_run.yml
 $ fly --target testserver execute -c test_run.yml
 
+```
